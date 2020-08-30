@@ -82,3 +82,23 @@ boton3.onclick = (respuesta) => {
 
     console.log(respuesta)
 }
+
+console.log("Ejercicio 3: Instagram by Malena")
+
+const card = document.querySelector(".card")
+const img = document.querySelector("img")
+const corazon = document.querySelector(".fa.fa-heart")
+const likes = document.querySelector("#likes")
+
+img.onclick = () => {
+    if (corazon.classList.contains("rojo")) {
+        
+        corazon.classList.remove("rojo")
+        likes.textContent = 0
+    }
+
+    else {
+        corazon.classList.add("rojo")
+        likes.textContent = "1"
+    }
+}
