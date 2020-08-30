@@ -1,0 +1,23 @@
+body {
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p-adivinanza {
+    font-style: italic;
+}
+
+.span-adivinanza {
+    font-style: normal;
+}
+
+.correcta {
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+.incorrecta {
+    background-color: red;
+    opacity: 0.8;
+    font-weight: bold;
+}

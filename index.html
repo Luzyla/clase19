@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>clase 19: DOM & Eventos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <!--
+        EJERCICIO 1: PLAYLIST
+
+        playlist
+        Crear un documento html con un título que diga 
+        Mis canciones favoritas y una lista desordenada. 
+        
+        Pedir mediante prompts por cinco canciones (una a la vez), 
+        y agregar esas canciones como ítems de la lista desordenada
+
+    -->
+
+    <section class="ejercicio1">
+
+        <h1>Mis canciones favoritas</h1>
+
+        <ul class="playlist">
+            <li id="song1"></li>
+            <li id="song2"></li>
+            <li id="song3"></li>
+            <li id="song4"></li>
+            <li id="song5"></li>
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!--
+        EJERCICIO 2: ADIVINANZA
+
+        Crear un documento html con una adivinanza (o una pregunta) 
+        y 3 botones con posibles respuestas. 
+        
+        Si se clickea la respuesta correcta, 
+        se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Correcto!) 
+        debajo de la adivinanza, 
+        y el botón seleccionado debe ponerse con un color de fondo verde. 
+        
+        Si se clickea una respuesta incorrecta, 
+        se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Le erraste!) 
+        y mostrar el botón con la respuesta correcta con un color de fondo verde 
+        y los otros dos con un color de fondo rojo.
+
+    -->
+
+    <section class="adivinanza">
+
+        <h2>Adivinanza</h2>
+        <div>
+            <p class="p-adivinanza">"Adivina este acertijo," <span class="span-adivinanza">le dijo la Esfinge a Edipo,</span> "o encontrarás tu muerte: ¿Cuál es la criatura que en
+            la mañana camina en cuatro patas, al medio día en dos y en la nocheen tres?"</h2>
+        </div>
+        <div>
+            <button id="unicornio">El unicornio</button>
+            <button id="hombre">El hombre</button>
+            <button id="dinosaurio">El dinosaurio</button>
+        </div>
+        <div>
+            <p id="mensaje"></p>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
