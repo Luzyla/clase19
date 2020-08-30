@@ -25,3 +25,59 @@ body {
 .rojo {
     color: red;
 }
+
+.paleta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rectangulo {
+    width: 55vw;
+    height: 20vh;
+    background-color: #424242;
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #424242;
+    text-align: center;
+    font-weight: bold;
+}
+
+.naranja {
+    background-color: #fc9303;
+    color: #fafafa;
+}
+
+
+.turquesa {
+    background-color: #00ced1;
+    color: #fafafa;
+}
+
+
+.magenta {
+    background-color: #cf3476;
+    color: #fafafa;
+}
+
+.purpura {
+    background-color: #4c2882;
+    color: #fafafa;
+}
+
+.gris {
+    background-color: #63686a;
+    color: #fafafa;
+}
+
+.verde {
+    background-color: #106b21;
+    color: #fafafa;
+}
+
+button {
+    width: 110px;
+    height: 75px;
+}

@@ -6,40 +6,40 @@ let cancion3 = document.getElementById("song3")
 let cancion4 = document.getElementById("song4")
 let cancion5 = document.getElementById("song5")
 
-const tuCancion1 = (cancion1) => {
-    cancionUsuario1 = prompt("Escribí el nombre de una de tus canciones favoritas")
-    cancion1.textContent = cancionUsuario1    
-    return cancionUsuario1
-}
-console.log(tuCancion1(cancion1))
+// const tuCancion1 = (cancion1) => {
+//     cancionUsuario1 = prompt("Escribí el nombre de una de tus canciones favoritas")
+//     cancion1.textContent = cancionUsuario1    
+//     return cancionUsuario1
+// }
+// console.log(tuCancion1(cancion1))
 
-const tuCancion2 = (cancion2) => {
-    cancionUsuario2 = prompt("Escribí el nombre de una de tus canciones favoritas")
-    cancion2.textContent = cancionUsuario2
-    return cancionUsuario2
-}
-console.log(tuCancion2(cancion2))
+// const tuCancion2 = (cancion2) => {
+//     cancionUsuario2 = prompt("Escribí el nombre de una de tus canciones favoritas")
+//     cancion2.textContent = cancionUsuario2
+//     return cancionUsuario2
+// }
+// console.log(tuCancion2(cancion2))
 
-const tuCancion3 = (cancion3) => {
-    cancionUsuario3 = prompt("Escribí el nombre de una de tus canciones favoritas")
-    cancion3.textContent = cancionUsuario3    
-    return cancionUsuario3
-}
-console.log(tuCancion3(cancion3))
+// const tuCancion3 = (cancion3) => {
+//     cancionUsuario3 = prompt("Escribí el nombre de una de tus canciones favoritas")
+//     cancion3.textContent = cancionUsuario3    
+//     return cancionUsuario3
+// }
+// console.log(tuCancion3(cancion3))
 
-const tuCancion4 = (cancion4) => {
-    cancionUsuario4 = prompt("Escribí el nombre de una de tus canciones favoritas")
-    cancion4.textContent = cancionUsuario4    
-    return cancionUsuario4
-}
-console.log(tuCancion4(cancion4))
+// const tuCancion4 = (cancion4) => {
+//     cancionUsuario4 = prompt("Escribí el nombre de una de tus canciones favoritas")
+//     cancion4.textContent = cancionUsuario4    
+//     return cancionUsuario4
+// }
+// console.log(tuCancion4(cancion4))
 
-const tuCancion5 = (cancion5) => {
-    cancionUsuario5 = prompt("Escribí el nombre de una de tus canciones favoritas")
-    cancion5.textContent = cancionUsuario5    
-    return cancionUsuario5
-}
-console.log(tuCancion5(cancion5))
+// const tuCancion5 = (cancion5) => {
+//     cancionUsuario5 = prompt("Escribí el nombre de una de tus canciones favoritas")
+//     cancion5.textContent = cancionUsuario5    
+//     return cancionUsuario5
+// }
+// console.log(tuCancion5(cancion5))
 
 console.log("Ejercicio 2: Adivinanza")
 
@@ -102,3 +102,100 @@ img.onclick = () => {
         likes.textContent = "1"
     }
 }
+
+console.log("Ejercicio 4: Contador")
+
+const numero = document.getElementById("p-numero")
+const restaUno = document.getElementById("menos-uno")
+const sumaUno = document.getElementById("mas-uno")
+const restaCinco = document.getElementById("menos-cinco")
+const sumaCinco = document.getElementById("mas-cinco")
+const restaDiez = document.getElementById("menos-diez")
+const sumaDiez = document.getElementById("mas-diez")
+let resultado = 0
+
+restaUno.onclick = () => {
+    resultado = resultado - 1
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+sumaUno.onclick = () => {
+    resultado = resultado + 1
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+restaCinco.onclick = () => {
+    resultado = resultado - 5
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+sumaCinco.onclick = () => {
+    resultado = resultado + 5
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+restaDiez.onclick = () => {
+    resultado = resultado - 10
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+sumaDiez.onclick = () => {
+    resultado = resultado + 10
+    console.log(resultado)
+    numero.textContent = resultado
+}
+
+console.log("Ejercicio 5: Paleta")
+
+const naranja = document.getElementById("b-naranja")
+const turquesa = document.getElementById("b-turquesa")
+const magenta = document.getElementById("b-magenta")
+const purpura = document.getElementById("b-purpura")
+const gris = document.getElementById("b-gris")
+const verde = document.getElementById("b-verde")
+const rectangulo = document.getElementById("b-rectangulo")
+
+
+naranja.onclick = () => {
+    rectangulo.classList.toggle("naranja")
+    console.log(rectangulo.classList)
+}
+
+turquesa.onclick = () => {
+    rectangulo.classList.toggle("turquesa")
+        
+    console.log(rectangulo.classList)
+}
+
+magenta.onclick = () => {
+    rectangulo.classList.toggle("magenta")
+       
+    console.log(rectangulo.classList)
+}
+
+purpura.onclick = () => {
+    rectangulo.classList.toggle("purpura")
+        
+    console.log(rectangulo.classList)
+}
+
+gris.onclick = () => {
+    rectangulo.classList.toggle("gris")
+    
+    console.log(rectangulo.classList)
+}
+
+verde.onclick = () => {
+    rectangulo.classList.toggle("verde")
+    
+    console.log(rectangulo.classList)
+}
+
+// Male: quería remover la clase agregada a la posición 1 (además de .rectangulo) antes de agregar otra clase, pero no lo logré hacer. Usé toggle para que con el 2do click se saque la clase y se pueda volver a poner y ver! No es la mejor solución pero es la que se me ocurrió.
+
+console.log("Ejercicio 6: ")
